@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lesson, we review the guidelines for the Phase 1 Project.
+For this project I will be acting as a movie consultant for Microsoft.
 
 ## Objectives
 
