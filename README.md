@@ -20,7 +20,7 @@ Do ratings and revenue correlate?
 IMDB and Box Office Mojo combined have a tremendous amound of data specific to movies. Data includes information on movie ratings, votes, domestic and international box office revenue, production companies, languages, etc. For this analysis I will use data from imdb.title.basics, imdb.title.akas, imdb.title.ratings and bom.movie_gross. 
 
 ## Methods
-
+This project uses descriptive analysis comparing volume of viewer ratings, value of viewer ratings and box office revenue by genre. This provides a useful overview of US movie trends related to which genres generate more revenue and why
 
 
 ## Results
