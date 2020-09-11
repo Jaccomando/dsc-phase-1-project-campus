@@ -10,10 +10,10 @@ Microsoft sees all the big companies creating original video content, and they w
 
 To do this I will answer the following questions. 
 
-*What movie genre in the last five years in the US market has the highest user ratings? 
-*What movie genre in the last five years in the US market has the highest number of reviews? 
-*What movie genre in the last five years in the US market has the highest gross box office revenue?
-*Do ratings and revenue correlate?
+What movie genre in the last five years in the US market has the highest user ratings? 
+What movie genre in the last five years in the US market has the highest number of reviews? 
+What movie genre in the last five years in the US market has the highest gross box office revenue?
+Do ratings and revenue correlate?
 
 ## Data
 
