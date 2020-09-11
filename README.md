@@ -1,94 +1,41 @@
 # Microsoft Movie Studio Analysis
 
-## Introduction
+## Overview
 
-For this project I will be acting as a movie consultant for Microsoft.
+This project analyzes movie data from IMDB and Box Office Mojo to help guide Microsoft's new movie studio business as it evaluates the best way to compete with others such as Netflix, Amazon, Disney, etc. Descriptive analysis of movie data shows that certain movie genres do much better at the box office than others. Microsoft is looking for recommendations for what typ of films do the best at the box office. Microsoft can use this analysis to focus their studio on certain film genres.
 
-## Objectives
+## Business Problem
 
-You will be able to:
+Microsoft sees all the big companies creating original video content, and they want to get in on the fun. They have decided to create a new movie studio, but the problem is they don’t know anything about creating movies. They have hired me to help them better understand the movie industry. I am charged with exploring what type of films are currently doing the best at the box office and translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
-* Start your Phase 1 Project
-* Check that your project meets the requirements
-* Submit your project materials in Canvas
-* Prepare for your project review
+To do this I will answer the following questions. 
 
-## Project Overview
+*What movie genre in the last five years in the US market has the highest user ratings? 
+*What movie genre in the last five years in the US market has the highest number of reviews? 
+*What movie genre in the last five years in the US market has the highest gross box office revenue?
+*Do ratings and revenue correlate?
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+## Data
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-campus/master/awesome.gif)
+IMDB and Box Office Mojo combined have a tremendous amound of data specific to movies. Data includes information on movie ratings, votes, domestic and international box office revenue, production companies, languages, etc. For this analysis I will use data from imdb.title.basics, imdb.title.akas, imdb.title.ratings and bom.movie_gross. 
 
-All that remains in Phase 1 is to put our newfound data science skills to use with a project! This project will take an entire week to complete.
+## Methods
 
-### Business Problem
 
-Microsoft sees all the big companies creating original video content, and they want to get in on the fun. They have decided to create a new movie studio, but the problem is they don’t know anything about creating movies. They have hired you to help them better understand the movie industry.
-Your team is charged with exploring what type of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
-### The Data
+## Results
 
-In the folder `zippedData` are movie datasets from:
+For US films released in the last five years the highest viewer ratings were for Documentaries, Musicals, Biography and History genres. But that doesn't mean they have high numbers of ratings votes. Rather they have very low vote counts. It seems there is no relation between high ratings and number of ratings.
 
-* Box Office Mojo
-* IMDB
-* Rotten Tomatoes
-* TheMovieDB.org
+Sci_Fi movies receive far more votes than any other genre, with Adventure, Action, Western and Fantasy also well represented.
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+Sci-Fi, Adventure, Animation, Action, and Fantasy genres round up the top five genres for Box Office Gross revenue in the US in the last five years. Sci-Fi and Adventure, Action and Fantasy are all in the top five genres with the highest count of Viewer Ratings. So there is some correlation between number of Viewer Ratings and Box Office revenue.
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+## Conclusions
+This analysis answers Microsoft's business question regarding where to focus their movie making efforts. Clearly Sci-Fi, Adventure, Animation, Action, and Fantasy are the genres generating the most box office revenue. It also suggests that the number of viewer ratings posted online correlates to box office revenue. So Microsoft should consider marketing campaigns geared toward generating high number of viewer reviews. And be aware that the actual rating value appears to have little to do with success at the box office.
 
-## Deliverables
 
-There are three deliverables for this project:
 
-1. A **GitHub repository**
-2. A **Jupyter Notebook**
-3. A **non-technical presentation**
-
-Keep in mind that the audience for these deliverables is not only your teacher, but also potential employers. Employers will look at your project deliverables to evaluate multiple skills, including coding, modeling, communication, and domain knowledge. You will want to polish these as much as you can, both during the course and afterwards.
-
-We provide a few resources to help you understand what makes for good deliverables.
-- The rubric associated with this assignment
-- [A template for you to use, with an example for reference][].
-
-### GitHub Repository
-
-Your GitHub repository is the public-facing version of your project that your instructors and potential employers will see - make it as accessible as you can. At a minimum, it should contain all your project files and a README.md file that summarizes your project and helps visitors navigate the repository.
-
-### Jupyter Notebook
-
-Your Jupyter Notebook is the primary source of information about your analysis. At a minimum, it should contain or import all of the code used in your project and walk the reader through your project from start to finish. You may choose to use multiple Jupyter Notebooks in your project, but you should have one that provides a full project overview as a point of entry for visitors.
-
-### Non-Technical Presentation
-
-Your non-technical presentation is your opportunity to communicate clearly and concisely about your project and it's real-world relevance. The target audience should be people with limited technical knowledge who may be interested in leveraging your project. For Phase 1, these would be Microsoft executives interested in making decisions about movie development. We recommend using Google Slides, PowerPoint or Keynote to create your presentation slides.
-
-## Getting Started
-
-Please start by reviewing this document. If you have any questions, please ask your instructor ASAP.
-
-Start on this project by forking [the Phase 1 Project Repository][], cloning it locally, and working in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-We also recommend you check out [the project template and example][]. You can use this template for your project repository and presentation.
-
-## Project Submission and Review
-
-Review [the Project Submission and Review guidance][] to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
-
-## Tips
-
-Ask for help from your peers or instructors early and often.
-
-[A template for you to use, with an example for reference]: https://github.com/learn-co-curriculum/dsc-project-template
-[Google Chrome Save to PDF instructions]: https://www.wikihow.com/Save-a-Web-Page-as-a-PDF-in-Google-Chrome
-[the Phase 1  Project Repository]: https://github.com/learn-co-curriculum/dsc-phase-1-project-campus
-[this project template and example]: https://github.com/learn-co-curriculum/dsc-project-template
-[the Project Submission and Review guidance]: https://github.com/learn-co-curriculum/dsc-project-submissions-campus
+## Next Steps
+Further analyses could yield additional insights as to the relationship between the number of viewer ratings, the rating value itself and box office revenue.
+Following a successful US launch we can provide additional analysis on other markets such as APAC, EMEA, Central and South America etc.
